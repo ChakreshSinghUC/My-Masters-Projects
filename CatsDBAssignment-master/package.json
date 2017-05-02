@@ -1,0 +1,19 @@
+{
+  "name": "catsdbassignment",
+  "version": "1.0.0",
+  "description": "Cloud COmputing assignment for final exam",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.uc.edu/singhch/CatsDBAssignment.git"
+  },
+  "keywords": [
+    "mysql",
+    "nodejs"
+  ],
+  "author": "Chakresh Singh",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bollywoodapp",
+  "version": "1.0.0",
+  "description": "Simple database for Bollywood movies.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies":{
+  	"express":"*",
+  	"body-parser":"*",
+  	"mongoose":"*"
+  },
+  "author": "Chakresh Singh",
+  "license": "ISC"
+}

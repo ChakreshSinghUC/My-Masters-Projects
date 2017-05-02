@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'json' ]
+2 info using npm@4.0.1
+3 info using node@v6.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData json
+8 silly fetchNamedPackageData json
+9 silly mapToRegistry name json
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'json',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'json',
+12 silly mapToRegistry   name: 'json',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/json
+14 verbose request uri https://registry.npmjs.org/json
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 15:25:14 GMT+0000 (UTC)
+17 verbose request id f09cce273badcc61
+18 verbose etag "B8UY9IS6KIQ414YKFXA1VDNMJ"
+19 http request GET https://registry.npmjs.org/json
+20 http 304 https://registry.npmjs.org/json
+21 verbose headers { date: 'Tue, 01 Nov 2016 15:25:14 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"B8UY9IS6KIQ414YKFXA1VDNMJ"',
+21 verbose headers   age: '35',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-sea1927-SEA',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1478013914.662411,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Tue, 01 Nov 2016 15:25:14 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"B8UY9IS6KIQ414YKFXA1VDNMJ"',
+22 silly get     age: '35',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-sea1927-SEA',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1478013914.662411,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/json from cache
+24 verbose get saving json to /home/ec2-user/.npm/registry.npmjs.org/json/.cache.json
+25 verbose correctMkdir /home/ec2-user/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule json@9.0.4 checking installable status
+39 silly cache add args [ 'json', null ]
+40 verbose cache add spec json
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'json',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'json',
+41 silly cache add   name: 'json',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed json@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for json
+44 info addNameTag [ 'json', 'latest' ]
+45 silly mapToRegistry name json
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'json',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'json',
+48 silly mapToRegistry   name: 'json',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/json
+50 verbose addNameTag registry:https://registry.npmjs.org/json not in flight; fetching
+51 verbose get https://registry.npmjs.org/json not expired, no request
+52 silly addNameTag next cb for json with tag latest
+53 silly addNamed json@9.0.4
+54 verbose addNamed "9.0.4" is a plain semver version for json
+55 silly cache afterAdd json@9.0.4
+56 verbose afterAdd /home/ec2-user/.npm/json/9.0.4/package/package.json not in flight; writing
+57 verbose correctMkdir /home/ec2-user/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /home/ec2-user/.npm/json/9.0.4/package/package.json written
+59 silly loadAllDepsIntoIdealTree Finishing
+60 silly loadIdealTree Finishing
+61 silly currentTree client@1.0.0
+61 silly currentTree └── bower@1.7.9
+62 silly idealTree client@1.0.0
+62 silly idealTree ├── bower@1.7.9
+62 silly idealTree └── json@9.0.4
+63 silly generateActionsToTake Starting
+64 silly install generateActionsToTake
+65 warn checkPermissions Missing write access to /home/ec2-user/Assignment2CloudComputing/client/node_modules
+66 silly rollbackFailedOptional Starting
+67 silly rollbackFailedOptional Finishing
+68 silly runTopLevelLifecycles Finishing
+69 silly install printInstalled
+70 warn client@1.0.0 No repository field.
+71 verbose If you need help, you may report this error at:
+71 verbose     <https://github.com/npm/npm/issues>
+72 verbose stack Error: EACCES: permission denied, access '/home/ec2-user/Assignment2CloudComputing/client/node_modules'
+72 verbose stack     at Error (native)
+73 verbose cwd /home/ec2-user/Assignment2CloudComputing/client
+74 error Linux 4.4.19-29.55.amzn1.x86_64
+75 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "json"
+76 error node v6.0.0
+77 error npm  v4.0.1
+78 error path /home/ec2-user/Assignment2CloudComputing/client/node_modules
+79 error code EACCES
+80 error errno -13
+81 error syscall access
+82 error Error: EACCES: permission denied, access '/home/ec2-user/Assignment2CloudComputing/client/node_modules'
+82 error     at Error (native)
+82 error  { Error: EACCES: permission denied, access '/home/ec2-user/Assignment2CloudComputing/client/node_modules'
+82 error     at Error (native)
+82 error   errno: -13,
+82 error   code: 'EACCES',
+82 error   syscall: 'access',
+82 error   path: '/home/ec2-user/Assignment2CloudComputing/client/node_modules' }
+83 error Please try running this command again as root/Administrator.
+84 verbose exit [ -13, true ]

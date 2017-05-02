@@ -1,0 +1,254 @@
+
+cvs.exe:     file format pei-i386
+cvs.exe
+architecture: i386, flags 0x00000102:
+EXEC_P, D_PAGED
+start address 0x004014c0
+
+Characteristics 0x30f
+	relocations stripped
+	executable
+	line numbers stripped
+	symbols stripped
+	32 bit words
+	debugging information removed
+
+Time/Date		Wed Dec 31 19:00:00 1969
+Magic			010b	(PE32)
+MajorLinkerVersion	2
+MinorLinkerVersion	28
+SizeOfCode		000b6600
+SizeOfInitializedData	000c4400
+SizeOfUninitializedData	00001000
+AddressOfEntryPoint	000014c0
+BaseOfCode		00001000
+BaseOfData		000b8000
+ImageBase		00400000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	4
+MinorOSystemVersion	0
+MajorImageVersion	1
+MinorImageVersion	0
+MajorSubsystemVersion	4
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		000c9000
+SizeOfHeaders		00000400
+CheckSum		000cc4ec
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00000140
+SizeOfStackReserve	00200000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 00000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 000c6000 00000e80 Import Directory [parts of .idata]
+Entry 2 00000000 00000000 Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 00000000 00000000 Base Relocation Directory [.reloc]
+Entry 6 00000000 00000000 Debug Directory
+Entry 7 00000000 00000000 Description Directory
+Entry 8 00000000 00000000 Special Directory
+Entry 9 000c8004 00000018 Thread Storage Directory [.tls]
+Entry a 00000000 00000000 Load Configuration Directory
+Entry b 00000000 00000000 Bound Import Directory
+Entry c 000c62b0 00000238 Import Address Table Directory
+Entry d 00000000 00000000 Delay Import Directory
+Entry e 00000000 00000000 CLR Runtime Header
+Entry f 00000000 00000000 Reserved
+
+There is an import table in .idata at 0x4c6000
+
+The Import Tables (interpreted .idata section contents)
+ vma:            Hint    Time      Forward  DLL       First
+                 Table   Stamp     Chain    Name      Thunk
+ 000c6000	000c6078 00000000 00000000 000c6c20 000c62b0
+
+	DLL Name: ADVAPI32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	c64e8	 1616  RegOpenKeyA
+	c64f6	 1646  RegSetValueExA
+
+ 000c6014	000c6084 00000000 00000000 000c6cd4 000c62bc
+
+	DLL Name: KERNEL32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	c6508	   84  CloseHandle
+	c6516	  115  CopyFileA
+	c6522	  165  CreatePipe
+	c6530	  168  CreateProcessA
+	c6542	  177  CreateSemaphoreW
+	c6556	  213  DeleteCriticalSection
+	c656e	  241  EnterCriticalSection
+	c6586	  445  GetConsoleWindow
+	c659a	  454  GetCurrentProcess
+	c65ae	  455  GetCurrentProcessId
+	c65c4	  459  GetCurrentThreadId
+	c65da	  481  GetEnvironmentVariableA
+	c65f4	  517  GetLastError
+	c6604	  535  GetModuleHandleA
+	c6618	  538  GetModuleHandleW
+	c662c	  583  GetProcAddress
+	c663e	  614  GetStartupInfoA
+	c6650	  637  GetSystemTimeAsFileTime
+	c666a	  665  GetTickCount
+	c667a	  749  InitializeCriticalSection
+	c6696	  777  IsDBCSLeadByteEx
+	c66aa	  808  LeaveCriticalSection
+	c66c2	  855  MultiByteToWideChar
+	c66d8	  893  PeekNamedPipe
+	c66e8	  920  QueryPerformanceCounter
+	c6702	  946  ReadFile
+	c670e	  968  ReleaseSemaphore
+	c6722	 1084  SetLastError
+	c6732	 1133  SetUnhandledExceptionFilter
+	c6750	 1146  Sleep
+	c6758	 1160  TerminateProcess
+	c676c	 1165  TlsAlloc
+	c6778	 1166  TlsFree
+	c6782	 1167  TlsGetValue
+	c6790	 1168  TlsSetValue
+	c679e	 1180  UnhandledExceptionFilter
+	c67ba	 1212  VirtualProtect
+	c67cc	 1215  VirtualQuery
+	c67dc	 1224  WaitForSingleObject
+	c67f2	 1248  WideCharToMultiByte
+	c6808	 1268  WriteFile
+
+ 000c6028	000c612c 00000000 00000000 000c6e30 000c6364
+
+	DLL Name: msvcrt.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	c6814	   48  __dllonexit
+	c6822	   49  __doserrno
+	c6830	   51  __getmainargs
+	c6840	   52  __initenv
+	c684c	   60  __lconv_init
+	c685c	   61  __mb_cur_max
+	c686c	   92  __pioinfo
+	c6878	   95  __set_app_type
+	c688a	   97  __setusermatherr
+	c689e	  109  _acmdln
+	c68a8	  125  _amsg_exit
+	c68b6	  142  _cexit
+	c68c0	  186  _errno
+	c68ca	  208  _filelengthi64
+	c68dc	  209  _fileno
+	c68e6	  221  _fmode
+	c68f0	  233  _fstat64
+	c68fc	  280  _initterm
+	c6908	  284  _iob
+	c6910	  381  _lock
+	c6918	  389  _lseeki64
+	c6924	  538  _onexit
+	c692e	  642  _strnicmp
+	c693a	  941  exit
+	c6942	  944  fclose
+	c694c	  947  fflush
+	c6956	  949  fgetpos
+	c6960	  955  fopen
+	c6968	  956  fprintf
+	c6972	  957  fputc
+	c697a	  958  fputs
+	c6982	  961  fread
+	c698a	  962  free
+	c6992	  967  fsetpos
+	c699c	  971  fwrite
+	c69a6	  973  getc
+	c69ae	  975  getenv
+	c69b8	  977  getwc
+	c69c0	  991  isspace
+	c69ca	  997  iswctype
+	c69d6	 1010  localeconv
+	c69e4	 1015  malloc
+	c69ee	 1019  memchr
+	c69f8	 1020  memcmp
+	c6a02	 1021  memcpy
+	c6a0c	 1022  memmove
+	c6a16	 1023  memset
+	c6a20	 1030  putc
+	c6a28	 1033  putwc
+	c6a30	 1038  realloc
+	c6a3a	 1044  setlocale
+	c6a46	 1045  setvbuf
+	c6a50	 1046  signal
+	c6a5a	 1049  sprintf
+	c6a64	 1053  strcat
+	c6a6e	 1054  strchr
+	c6a78	 1055  strcmp
+	c6a82	 1056  strcoll
+	c6a8c	 1059  strerror
+	c6a98	 1060  strftime
+	c6aa4	 1061  strlen
+	c6aae	 1063  strncmp
+	c6ab8	 1068  strstr
+	c6ac2	 1072  strtoul
+	c6acc	 1073  strxfrm
+	c6ad6	  679  _unlock
+	c6ae0	  734  _write
+	c6aea	  762  abort
+	c6af2	  771  atoi
+	c6afa	 1134  towlower
+	c6b06	 1135  towupper
+	c6b12	 1136  ungetc
+	c6b1c	 1137  ungetwc
+	c6b26	 1138  vfprintf
+	c6b32	 1147  wcscoll
+	c6b3c	 1150  wcsftime
+	c6b48	 1151  wcslen
+	c6b52	 1164  wcsxfrm
+	c6b5c	  931  calloc
+	c6b66	 1199  _write
+	c6b70	 1241  _read
+	c6b78	 1268  _fileno
+	c6b82	 1272  _fdopen
+
+ 000c603c	000c627c 00000000 00000000 000c6e40 000c64b4
+
+	DLL Name: USER32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	c6b8c	  821  ShowWindow
+
+ 000c6050	000c6284 00000000 00000000 000c6e74 000c64bc
+
+	DLL Name: WS2_32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	c6b9a	   27  WSACleanup
+	c6ba8	   44  WSAGetLastError
+	c6bba	   85  WSAStartup
+	c6bc8	  135  closesocket
+	c6bd6	  136  connect
+	c6be0	  137  freeaddrinfo
+	c6bf0	  138  getaddrinfo
+	c6bfe	  160  recv
+	c6c06	  163  send
+	c6c0e	  167  socket
+
+ 000c6064	00000000 00000000 00000000 00000000 00000000
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000b65c0  00401000  00401000  00000400  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE, DATA
+  1 .data         00001af0  004b8000  004b8000  000b6a00  2**5
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .rdata        0000ac94  004ba000  004ba000  000b8600  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .bss          00000f00  004c5000  004c5000  00000000  2**5
+                  ALLOC
+  4 .idata        00000e80  004c6000  004c6000  000c3400  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .CRT          00000034  004c7000  004c7000  000c4400  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .tls          00000020  004c8000  004c8000  000c4600  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+SYMBOL TABLE:
+no symbols
+
+

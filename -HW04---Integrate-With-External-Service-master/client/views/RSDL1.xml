@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsdl href="/api?rsdl" rel="rsdl">
+    <description>This is a simple database for viewing Bollywood movies. The application is built the MEAN stack which is short form for MongoDB, Express, Angular js, and Node js. The app allows edit, delete and query operations. For this it uses Get and Put operations.
+   </description>
+   <version major="1" minor="0" build="0" revision="0"/>
+   <links>
+     <link href="/api/movie">
+         <request>
+            <http_method>GET</http_method>
+         </request>
+         <response>
+                <type>JSON</type>
+         </response>
+      </link>
+      <link href="/api/genre">
+         <request>
+            <http_method>GET</http_method>
+         </request>
+         <response>
+            <type>JSON</type>
+         </response>
+      </link>
+      <link href="#/">
+         <request>
+            <http_method>GET</http_method>
+         </request>
+         <response>
+            <type>JSON</type>
+         </response>
+      </link>    
+      <link href="#/movies">
+         <request>
+            <http_method>GET</http_method>
+         </request>
+         <response>
+            <type>JSON</type>
+         </response>
+      </link>
+      <link href="#/genres">
+         <request>
+            <http_method>GET</http_method>
+         </request>
+            <response>
+            <type>JSON</type>
+         </response>
+      </link>
+      <link href = '/api/movie/:_id'>
+         <request>
+            <http_method>PUT</http_method>
+               <body>
+                   <parameter required="TRUE">
+                     <name>id</name>
+                  </parameter>
+               </body>
+         </request>
+         <response>
+            <type>JSON</type>
+         </response>
+      </link>
+      <link href = '/api/genre'>
+         <request>
+            <http_method>POST</http_method>
+         </request>
+            <response>
+               <type>JSON</type>
+            </response>
+      </link>
+      <link href = '/api/genre/:_id'>
+         <request>
+            <http_method>PUT</http_method>
+               <body>
+                   <parameter required="TRUE">
+                     <name>id</name>
+                   </parameter>
+               </body>
+         </request>
+         <response>
+            <type>JSON</type>
+         </response>
+      </link>
+    </links>
+</rsdl>

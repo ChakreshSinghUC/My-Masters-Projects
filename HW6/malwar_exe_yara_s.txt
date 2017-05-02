@@ -1,0 +1,61 @@
+exerule cvs.exe
+0xb8654:$s1: Applogs.txt
+0xbe863:$s2: money
+0xbe8a3:$s2: money
+0xbe8e3:$s2: money
+0xbe923:$s2: money
+0xbe963:$s2: money
+0xbe9a3:$s2: money
+0xbe9e3:$s2: money
+0xbea23:$s2: money
+0xbea63:$s2: money
+0xbeaa3:$s2: money
+0xbeae3:$s2: money
+0xbeb23:$s2: money
+0xbeb63:$s2: money
+0xbeba3:$s2: money
+0xbebe3:$s2: money
+0xbec23:$s2: money
+0xbecad:$s2: money
+0xbeccd:$s2: money
+0xbeced:$s2: money
+0xbed0d:$s2: money
+0xbef2d:$s2: money
+0xbef6d:$s2: money
+0xbefad:$s2: money
+0xbefed:$s2: money
+0xbf18c:$s2: money
+0xbf1ec:$s2: money
+0xbf24c:$s2: money
+0xbf2ac:$s2: money
+0xbf348:$s2: money
+0xbf358:$s2: money
+0xbf370:$s2: money
+0xbf388:$s2: money
+0xbf3a0:$s2: money
+0xbfb50:$s2: money
+0xbfb70:$s2: money
+0xbfb90:$s2: money
+0xbfbb0:$s2: money
+0xbfbd2:$s2: money
+0xbfbf2:$s2: money
+0xbfc12:$s2: money
+0xbfc32:$s2: money
+0xc02c3:$s2: money
+0xc0303:$s2: money
+0xc0343:$s2: money
+0xc0383:$s2: money
+0xbc0ae:$s3: Future already retrieved
+0xb8838:$s4: malware
+0xb8821:$s5: AIMClient
+0xbc09f:$s6: Broken promise
+0xbc0c7:$s7: Promise already satisfied
+0xb882e:$my_hex_string1: 75 73 61 6F 6E 
+0xb8838:$my_hex_string2: 6D 61 6C 
+0xbaec0:$my_hex_string2: 6D 61 6C 
+0xbaeca:$my_hex_string2: 6D 61 6C 
+0xbaed4:$my_hex_string2: 6D 61 6C 
+0xbb56a:$my_hex_string2: 6D 61 6C 
+0xbc273:$my_hex_string2: 6D 61 6C 
+0xc3de6:$my_hex_string2: 6D 61 6C 
+0xb883b:$my_hex_string3: 77 61 72 65 

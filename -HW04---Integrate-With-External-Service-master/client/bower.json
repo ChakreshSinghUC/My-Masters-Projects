@@ -1,0 +1,22 @@
+{
+  "name": "Bollywood Movies",
+  "description": "Simple Bollywood movie portal",
+  "main": "app.js",
+  "authors": [
+    "Chakresh Singh"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ChakreshSinghUC/Assignment2CloudComputing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "bollywoodapp",
+  "description": "Simple database for Bollywood movies.",
+  "main": "app.js",
+  "authors": [
+    "Chakresh Singh"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

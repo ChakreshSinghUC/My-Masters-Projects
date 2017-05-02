@@ -1,0 +1,41 @@
+<div class="panel panel-default" ng-init="getMovies()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Movies</h3>
+  </div>
+  <form name="f" >
+      <br>Roll a dice (added for assignment 4):</br>
+      <button onclick="calcLucky()">Dice</button>
+
+</form>
+  <div class="panel-body">
+    <div class="row">
+      <div ng-repeat="movie in movies" >
+          <div class="col-md-3">
+              <div>
+                <h4>{{movie.title}}</h4">
+                  <a href ="#/movie/details/{{movie._id}}">
+                  Details</a>
+              </div>
+              <div class="col-md-6">
+                <img class ="thumbnail" ng-src = "{{movie.image_url}}">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div> 
+  <script type="text/javascript">
+    function calcLucky(){
+      var theUrl = "https://www.random.org/integers/?num=1&col=1&base=10&format=plain&rnd=new&min=1&max=6";
+    //stackoverflow: http://stackoverflow.com/questions/247483/http-get-request-in-javascript
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); 
+    xmlHttp.send( null );
+  alert (xmlHttp.responseText);
+    return xmlHttp.responseText;
+            
+//return false;
+          }
+  </script> 
+</div> 
